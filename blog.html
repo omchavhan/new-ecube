@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Start Meta -->
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Slaze - Solar & Renewable Energy HTML5 Template">
+	<meta name="keywords" content="Creative, Digital, multipage, landing, freelancer template">
+	<meta name="author" content="ThemeOri">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Title of Site -->
+	<title>Blogs</title>
+	<!-- Favicons -->
+	<link rel="icon" type="image/png" href="assets/img/favicon.ico">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="assets/css/fontawesome.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="assets/css/animate.css">
+	<!-- Flaticon -->
+	<link rel="stylesheet" href="assets/font/flaticon_slaze.css">
+	<!-- Swiper Bundle CSS -->
+	<link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+	<!-- Magnific Popup CSS -->
+	<link rel="stylesheet" href="assets/css/magnific-popup.css">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="assets/sass/style.css">
+</head>
+
+<body>
+	<style>
+		.blog__standard-item {
+			display: flex;
+			flex-wrap: wrap;
+			margin-bottom: 30px;
+		}
+
+		.blog__standard-item-content-wrapper {
+			display: flex;
+			width: 100%;
+			flex-direction: row;
+		}
+
+		.blog__standard-item-image {
+			flex: 1;
+			min-width: 300px;
+		}
+
+		.blog__standard-item-image img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+
+		.blog__standard-item-content {
+			flex: 2;
+			padding-left: 20px;
+		}
+
+		.blog__standard-item-content-meta ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 10px;
+		}
+
+		.blog__standard-item-content-meta ul li {
+			display: inline-block;
+		}
+
+		.blog__standard-item-content-meta ul li a {
+			text-decoration: none;
+			color: #333;
+		}
+
+		h5 {
+			margin-top: 10px;
+			font-size: 1.5rem;
+		}
+
+		p {
+			margin: 10px 0;
+		}
+
+		.btn-one {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #000;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+		}
+
+		@media (max-width: 768px) {
+			.blog__standard-item-content-wrapper {
+				flex-direction: column;
+			}
+
+			.blog__standard-item-content {
+				padding-left: 0;
+				padding-top: 20px;
+			}
+		}
+	</style>
+
+	<style>
+		/* Floating WhatsApp Button Styles */
+		#whatsapp-chat {
+			position: fixed;
+			bottom: 80px;
+			right: 20px;
+			z-index: 1000;
+		}
+
+
+
+		#whatsapp-chat img {
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+
+	<!-- WhatsApp Floating Button -->
+	<div id="whatsapp-chat">
+		<a href="https://wa.me/+919422012312" target="_blank">
+			<img src="assets/img/whatsapp.png" alt="Chat with us on WhatsApp">
+		</a>
+	</div>
+	<!-- Preloader Start -->
+	<div class="theme-loader">
+		<div class="spinner">
+			<div class="spinner-bounce one"></div>
+			<div class="spinner-bounce two"></div>
+			<div class="spinner-bounce three"></div>
+		</div>
+	</div>
+	<!-- Preloader End -->
+	<!-- Dark Light Start -->
+	<div class="switch__tab">
+		<span class="switch__tab-btn active light-mode-title">Light</span>
+		<span class="mode__switch" onclick="darkLight()"><span></span></span>
+		<span class="switch__tab-btn dark-mode-title">Dark</span>
+	</div>
+	<!-- Dark Light End -->
+
+	<!-- Search Box Start -->
+	<div class="header__area-menubar-right-search-box">
+		<form>
+			<input type="search" placeholder="Search Here.....">
+			<button type="submit"><i class="fal fa-search"></i></button>
+		</form>
+		<span class="header__area-menubar-right-search-box-icon"><i class="fal fa-times"></i></span>
+	</div>
+	<!-- Search Box End -->
+	<!-- Hamburger Start -->
+	<div class="header__area-menubar-right-sidebar-popup three">
+		<div class="sidebar-close-btn"><i class="fal fa-times"></i></div>
+		<div class="header__area-menubar-right-sidebar-popup-logo">
+			<a href="index.html"> <img src="assets/img/ecube footer - logo.png" alt="Logo-image"></a>
+		</div>
+		<p style="text-align: justify;">E Cube Services was born out of a passion for technology and a commitment to a
+			greener future. Our founder, Paresh Mutha (Jain) , envisioned a world where technology not only improves
+			lives but also respects our planet.</p>
+		<div class="header__area-menubar-right-sidebar-popup-contact">
+			<h4 class="mb-30">Get In Touch</h4>
+			<div class="header__area-menubar-right-sidebar-popup-contact-item">
+				<div class="header__area-menubar-right-sidebar-popup-contact-item-icon">
+					<i class="fal fa-phone-alt icon-animation"></i>
+				</div>
+				<div class="header__area-menubar-right-sidebar-popup-contact-item-content">
+					<span>Call Now</span>
+					<h6><a href="tel:+91 81493 30610">+91 81493 30610</a></h6>
+				</div>
+			</div>
+			<div class="header__area-menubar-right-sidebar-popup-contact-item">
+				<div class="header__area-menubar-right-sidebar-popup-contact-item-icon">
+					<i class="fal fa-envelope"></i>
+				</div>
+				<div class="header__area-menubar-right-sidebar-popup-contact-item-content">
+					<span>Quick Email</span>
+					<h6><a href="ecubegroupnsk@gmail.com">ecubegroupnsk@gmail.com</a></h6>
+				</div>
+			</div>
+			<div class="header__area-menubar-right-sidebar-popup-contact-item">
+				<div class="header__area-menubar-right-sidebar-popup-contact-item-icon">
+					<i class="fal fa-map-marker-alt"></i>
+				</div>
+				<div class="header__area-menubar-right-sidebar-popup-contact-item-content">
+					<span>Office Address</span>
+					<h6><a href="https://maps.app.goo.gl/tPYMydLVPZPHDijRA" target="_blank">Shanti Tower, 4 & 5, Vakil
+							Wadi, nr. Dinesh Sarees, Ashok Stambh,Nashik</a></h6>
+				</div>
+			</div>
+		</div>
+		<div class="header__area-menubar-right-sidebar-popup-social social__icon">
+			<ul>
+				<li><a href="https://www.facebook.com/cctvcameraecube?mibextid=LQQJ4d" target="_blank"><i
+							class="fab fa-facebook-f"></i></a></li>
+				<li><a href="https://www.instagram.com/ecubesecuritysolutions?igsh=MWUxMnJ0bnAzbngwMg=="
+						target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+				<!-- <li><a href="https://behance.net" target="_blank"><i class="fab fa-behance"></i></a></li>
+				<li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li> -->
+			</ul>
+		</div>
+	</div>
+	<div class="sidebar-overlay"></div>
+	<!-- Hamburger End -->
+	<!-- Mobile Menu Start -->
+	<div class="menu__bar-popup">
+		<div class="menu__bar-popup-top">
+			<div class="logo"><a href="index.html"><img src="assets/img/logo-2.png" alt="logo-image"></a></div>
+			<div class="close"><i class="fal fa-times"></i></div>
+
+		</div>
+		<div class="vertical-menu">
+			<div class="vertical_menu">
+				<!-- Here Menu Will Come Automatically Via Javascript / Same Menu as in Header -->
+			</div>
+		</div>
+	</div>
+	<div class="menu__bar-popup-overlay"></div>
+	<!-- Mobile Menu End -->
+	<!-- Header Area Start -->
+	<div class="header__area" style="height: 100px;">
+		<div class="custom__container">
+			<div class="header__area-menubar" style="height: 100px;">
+				<div class="header__area-menubar-left one">
+					<div class="header__area-menubar-left-logo">
+						<a href="index.html"><img src="assets/img/ecube-logo.png" alt="logo"
+								style="margin-left: 30px;"></a>
+					</div>
+				</div>
+				<div class="header__area-menubar-center">
+					<div class="header__area-menubar-center-menu">
+						<ul id="mobilemenu">
+							<li><a href="index.html">Home</a>
+								<!-- <ul class="sub-menu">
+                                    <li><a href="index.html">Solar Energy</a></li>
+                                    <li><a href="index-two.html">Wind Energy</a></li>
+                                    <li><a href="index-three.html">Renewable Energy</a></li>
+                                </ul> -->
+							</li>
+							<li><a href="about.html">About Us</a>
+								<!-- <ul class="sub-menu">
+									<li><a href="about.html">About Us</a></li>
+									<li class="menu-item-has-children"><a href="#">Services</a>
+										<ul class="sub-menu">
+											<li><a href="service.html">Service 01</a></li>
+											<li><a href="service-two.html">Service 02</a></li>
+											<li><a href="service-right-sidebar.html">Single Right Sidebar</a></li>
+											<li><a href="service-left-sidebar.html">Single Left Sidebar</a></li>
+										</ul>
+									</li>
+									<li><a href="pricing.html">Price Plans</a></li>
+									<li><a href="faq.html">FAQ's</a></li>
+									<li><a href="testimonial.html">Testimonials</a></li>
+									<li class="menu-item-has-children"><a href="#">Teams</a>
+										<ul class="sub-menu">
+											<li><a href="team.html">Team 01</a></li>
+											<li><a href="team-two.html">Team 02</a></li>
+											<li><a href="team-three.html">Team 03</a></li>
+											<li><a href="team-details.html">Team Details</a></li>
+										</ul>
+									</li>
+									<li><a href="request-quote.html">Request Quote</a></li>
+									<li><a href="404-error.html">404 Page</a></li>
+								</ul> -->
+							</li>
+							<li><a href="Our Technology.html">ECUBE INSTITUTE</a></li>
+							<li><a href="service.html">Service</a>
+								<!-- <ul class="sub-menu">
+									<li class="menu-item-has-children"><a href="#">Project Grid</a>
+										<ul class="sub-menu">
+											<li><a href="project-two.html">2 Columns</a></li>
+											<li><a href="project-three.html">3 Columns</a></li>
+											<li><a href="project-four.html">4 Columns</a></li>
+										</ul>
+									</li>
+									<li><a href="project-details.html">Project Details</a></li>
+                                </ul> -->
+							</li>
+							<li><a href="project.html">Project</a></li>
+							<li><a href="blog.html">Blog</a>
+								<!-- <ul class="sub-menu">
+									<li class="menu-item-has-children"><a href="#">Blog Grid</a>
+										<ul class="sub-menu">
+											<li><a href="blog-grid-two.html">2 Columns</a></li>
+											<li><a href="blog-grid-three.html">3 Columns</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">Blog Standard</a>
+										<ul class="sub-menu">
+											<li><a href="standard-left-sidebar.html">Left Sidebar</a></li>
+											<li><a href="standard-full-width.html">Full Width</a></li>
+											<li><a href="standard-right-sidebar.html">Right Sidebar</a></li>
+										</ul>
+									</li>
+									<li class="menu-item-has-children"><a href="#">Blog Single</a>
+										<ul class="sub-menu">
+											<li><a href="single-left-sidebar.html">Left Sidebar</a></li>
+											<li><a href="single-full-width.html">Full Width</a></li>
+											<li><a href="single-right-sidebar.html">Right Sidebar</a></li>
+										</ul>
+									</li>
+                                </ul> -->
+							</li>
+							<li><a href="contact.html">Contact</a>
+								<!-- <ul class="sub-menu">
+                            		<li><a href="contact.html">Contact Style 01</a></li>
+                            		<li><a href="contact-two.html">Contact Style 02</a></li>
+                                </ul> -->
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="header__area-menubar-right">
+					<div class="header__area-menubar-right-sidebar">
+						<div class="header__area-menubar-right-sidebar-popup-icon"><i class="flaticon-menu-2"
+								style="margin-right: 50px;"></i></div>
+					</div>
+
+					<div class="header__area-menubar-right-responsive-menu menu__bar">
+						<i class="flaticon-menu-2" style="margin-right: 50px;"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Header Area End -->
+	<!-- Breadcrumb Area Start -->
+	<div class="breadcrumb__area" data-background="assets/img/blog/blog-panel.jpg">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="breadcrumb__area-content">
+						<h1>Blog</h1>
+						<ul>
+							<li><a href="index.html">Home</a><i class="fa-regular fa-angle-right"></i></li>
+							<li>Blogs</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Breadcrumb Area End -->
+
+	<!-- Blog Standard Area Start -->
+	<div class="blog__standard-arae section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-12">
+					<div class="blog__standard dark_image">
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/The Future of Solar Energy.jpg" alt="blog-standard">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>13, March 2024</a></li>
+
+									</ul>
+								</div>
+								<h5>The Future of Solar Energy: Innovations and Trends to Watch
+								</h5>
+								<p style="text-align: justify;">Dive deep into the evolving landscape of solar energy,
+									exploring cutting-edge innovations and emerging trends that are shaping the
+									industry. Discuss advancements in solar panel efficiency, new materials and designs,
+									and the integration of solar with smart home technologies like energy storage
+									systems and grid integration. Highlight the environmental benefits of solar energy
+									and its role in sustainable development, offering insights into how consumers and
+									businesses can benefit from adopting solar solutions.</p>
+
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/CCTV-blog.jpg" alt="blog-details-image">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>14,Jan 2024</a></li>
+
+									</ul>
+								</div>
+								<h5>Enhancing Home Security: A Guide to Choosing the Right CCTV System
+								</h5>
+								<p style="text-align: justify;">In this comprehensive guide, provide readers with
+									everything they need to know about selecting and installing CCTV camera systems for
+									various residential and commercial applications. Cover topics such as different
+									types of cameras (e.g., dome, bullet, PTZ), features to consider (e.g., resolution,
+									night vision, motion detection), and the importance of video storage and remote
+									monitoring capabilities. Include practical tips on camera placement for optimal
+									security coverage and discuss how integrating CCTV systems with other smart security
+									solutions can provide enhanced protection and peace of mind.</p>
+
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/Enhancing Home Security.jpg" alt="blog-standard">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>07, Dec 2023</a></li>
+
+									</ul>
+								</div>
+								<h5>Smart Homes 101: How Home Automation is Transforming Daily Living
+								</h5>
+								<p style="text-align: justify;">Explore the growing popularity of smart home technology
+									and its impact on modern lifestyles. Delve into the benefits of home automation
+									systems, such as energy efficiency, convenience, and improved home security. Provide
+									an overview of popular smart devices and systems available today, from smart
+									lighting and thermostats to voice-controlled assistants and integrated home security
+									systems. Include real-life examples and case studies of how homeowners can benefit
+									from automating their homes, and offer practical advice on choosing and installing
+									smart devices that best suit their needs.</p>
+
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/The Importance of Vehicle Tracking Systems.jpg"
+									alt="blog-standard">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>04, Aust 2023</a></li>
+
+									</ul>
+								</div>
+								<h5>The Importance of Vehicle Tracking Systems for Fleet Management
+								</h5>
+								<p style="text-align: justify;">Discuss the critical role of GPS vehicle tracking
+									systems in optimizing fleet operations and improving business efficiency. Explain
+									how vehicle trackers work and their key features, such as real-time location
+									tracking, route optimization, and driver behavior monitoring. Highlight the benefits
+									for businesses, including reduced fuel costs, improved fleet safety and security,
+									enhanced customer service through accurate delivery tracking, and compliance with
+									regulatory requirements. Provide insights into choosing the right vehicle tracking
+									solution based on fleet size, industry-specific needs, and budget considerations.
+								</p>
+
+							</div>
+						</div>
+						<div class="blog__standard-item">
+							<div class="blog__standard-item-image">
+								<img src="assets/img/blog/Biometric Technology.jpg" alt="blog-standard">
+							</div>
+							<div class="blog__standard-item-content">
+								<div class="blog__standard-item-content-meta">
+									<ul>
+
+										<li><a href="#"><i class="fal fa-calendar-alt"></i>07, March 2024</a></li>
+
+									</ul>
+								</div>
+								<h5>Biometric Technology: Revolutionizing Attendance Management in the Workplace
+								</h5>
+								<p style="text-align: justify;">Examine the transformative impact of biometric
+									technology on attendance management practices in workplaces and educational
+									institutions. Discuss the advantages of biometric systems, such as fingerprint and
+									facial recognition, over traditional attendance methods like paper logs and swipe
+									cards. Explore how biometrics enhance accuracy, efficiency, and security in tracking
+									employee attendance and student attendance, while also addressing privacy concerns
+									and regulatory compliance. Showcase case studies of organizations that have
+									successfully implemented biometric attendance systems and achieved operational
+									improvements and cost savings.</p>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Blog Standard Area End -->
+
+	<!-- Footer Area Start -->
+	<div class="footer__area three" data-background="assets/img/shape/shape-13.png" style="padding-bottom: 50px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 lg-mb-25">
+					<div class="row">
+						<div class="col-lg-8 col-sm-7 sm-mb-25">
+							<div class="footer__area-widget">
+								<div class="logo">
+									<a href="index.html"><img src="assets/img/ecube footer - logo.png"
+											alt="Logo-image"></a>
+								</div>
+								<div class="footer__area-widget-company">
+									<p>Shanti Tower, 4 & 5, Vakil Wadi, nr. Dinesh Sarees, Ashok Stambh, Raviwar
+										Karanja, Panchavati, Nashik, Maharashtra 422001</p>
+									<div class="social__icon mt-60">
+										<ul>
+											<li><a href="https://www.facebook.com/cctvcameraecube?mibextid=LQQJ4d"
+													target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+											<li><a href="https://www.instagram.com/ecubesecuritysolutions?igsh=MWUxMnJ0bnAzbngwMg=="
+													target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+											<!-- <li><a href="https://behance.net" target="_blank"><i
+														class="fab fa-behance"></i></a></li>
+											<li><a href="https://linkedin.com" target="_blank"><i
+														class="fab fa-linkedin-in"></i></a></li> -->
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-sm-5">
+							<div class="footer__area-widget">
+								<h6>Company</h6>
+								<div class="footer-widget-menu">
+									<ul>
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="blog.html">Blog</a></li>
+										<li><a href="service.html">Services</a></li>
+										<li><a href="project.html">Project</a></li>
+										<li><a href="contact.html">Contact Us</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col-sm-5 sm-mb-25">
+							<div class="footer__area-widget">
+								<h6>Our Services</h6>
+								<div class="footer-widget-menu">
+									<ul>
+										<li><a href="service.html">Solar Panels</a></li>
+										<li><a href="service.html">CCTV Cameras</a></li>
+										<li><a href="service.html">Security Alarms</a></li>
+										<li><a href="service.html">Home Automation</a></li>
+										<li><a href="service.html">Access Control Systems</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- Footer Area End -->
+	<!-- Scroll Btn Start -->
+	<div class="scroll-up">
+		<svg class="scroll-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+			<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+		</svg>
+	</div>
+	<!-- Scroll Btn End -->
+	<!-- Main JS -->
+	<script src="assets/js/jquery-3.7.0.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/js/bootstrap.min.js"></script>
+	<!-- Counter Up JS -->
+	<script src="assets/js/jquery.counterup.min.js"></script>
+	<!-- Popper JS -->
+	<script src="assets/js/popper.min.js"></script>
+	<!-- Progressbar JS -->
+	<script src="assets/js/progressbar.min.js"></script>
+	<!-- Magnific Popup JS -->
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<!-- Swiper Bundle JS -->
+	<script src="assets/js/swiper-bundle.min.js"></script>
+	<!-- Isotope JS -->
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<!-- Waypoints JS -->
+	<script src="assets/js/jquery.waypoints.min.js"></script>
+	<!-- Custom JS -->
+	<script src="assets/js/custom.js"></script>
+</body>
+
+</html>
